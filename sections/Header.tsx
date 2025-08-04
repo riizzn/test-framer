@@ -6,16 +6,16 @@ import MenuIcon from "@/assets/menu.svg";
 import { navLinks } from "@/constants";
 const Header = () => {
   return (
-    <header className="sticky top-0">
-      <div className="flex items-center justify-center py-3 bg-black text-sm  text-white gap-3">
+    <header className="sticky top-0  backdrop-blur-sm z-20">
+      <div className="flex items-center justify-center py-3 bg-black text-sm  text-white gap-3 ">
         <p className="text-white/60 hidden md:block">Clarity meets focus meets flow in one elegant workspace.</p>
-        <div className="inline-flex gap-1 items-center">
+        <div className="aurora-text-animated inline-flex gap-1 items-center">
           <p>Get started for free</p>
           <ArrowRight className="h-4 w-4 inline-flex  justify-center items-center" />
         </div>
       </div>
-      <div className="w-full px-4 py-4">
-        <div className="flex justify-between items-center bg-gray-300 rounded-full px-5 py-3">
+      <div className="w-full px-4 py-2 ">
+        <div className=" flex justify-between items-center  rounded-full px-5 py-3">
           <div className="flex">
           <Image src={logo} alt="logo" height={40} width={40} />
           <Image src={am} alt="amethyst" height={100} width={100}  className="object-contain hidden md:block"/>

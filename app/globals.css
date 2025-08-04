@@ -12,11 +12,63 @@
   
 }
 
-
-
-
 body {
   background: var(--background);
   color: var(--foreground);
   
+}
+
+@layer components{
+  .btn {
+    @apply  rounded-full px-5 py-3 font-medium inline-flex justify-center items-center tracking-tight
+  }
+  .btn-primary{
+      @apply bg-black  text-white
+
+  }
+  .btn-text{
+    @apply text-black bg-transparent
+  }
+}
+
+@layer utilities {
+  .bg-radial-hero {
+    background-image: radial-gradient(ellipse 200% 100% at bottom left, #634994, #EAEEFE 86%);
+  }
+}
+
+
+.aurora-banner {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 182, 193, 0.25) 0%,
+    rgba(221, 160, 221, 0.3) 20%,
+    rgba(173, 216, 230, 0.25) 40%,
+    rgba(255, 228, 196, 0.3) 60%,
+    rgba(230, 230, 250, 0.25) 80%,
+    rgba(245, 245, 220, 0.2) 100%
+  );
+}
+
+.aurora-text-animated {
+  background: linear-gradient(
+    135deg,
+    #FFB6C1 0%,
+    #DDA0DD 20%,
+    #ADD8E6 40%,
+    #FFE4C4 60%,
+    #E6E6FA 80%,
+    #F5F5DC 100%
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: aurora-shift 3s ease-in-out infinite;
+  font-weight: 600;
+}
+
+@keyframes aurora-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
