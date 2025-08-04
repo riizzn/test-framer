@@ -29,11 +29,20 @@ body {
   .btn-text{
     @apply text-black bg-transparent
   }
+  .logo-ticker-img{
+    @apply h-8 w-auto 
+  }
+  
 }
 
 @layer utilities {
   .bg-radial-hero {
     background-image: radial-gradient(ellipse 200% 100% at bottom left, #634994, #EAEEFE 86%);
+  }
+  .mask-fade-x {
+    mask-image: linear-gradient(to right, transparent, black, transparent);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
   }
 }
 
