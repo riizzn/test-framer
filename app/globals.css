@@ -37,7 +37,7 @@ body {
     @apply  font-bold tracking-tighter pb-3 bg-gradient-to-b from-black to-[#3D2B63] text-transparent bg-clip-text mt-6;
   }
    .sub-heading {
-    @apply  font-bold tracking-tighter pb-3 bg-gradient-to-b from-black to-[#4F3A7A] text-transparent bg-clip-text mt-6;
+    @apply  font-semibold tracking-tighter pb-3 bg-gradient-to-b from-black to-[#4F3A7A] text-transparent bg-clip-text ;
   }
 
   .para{

@@ -12,7 +12,7 @@ const ProductShowcase = () => {
         <div className="flex justify-center">
           <div className="tag">Distraction-Free Flow</div>
         </div>
-        <h2 className=" text-4xl md:text-6xl  sub-heading text-center">
+        <h2 className=" text-4xl md:text-6xl  sub-heading text-center mt-6">
           A smoother path into crystal clear focus
         </h2>
         <p className="para text-center leading-[30px]">
