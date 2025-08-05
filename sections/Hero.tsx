@@ -9,14 +9,12 @@ const Hero = () => {
     <section className="max-w-7xl mx-auto p-6 sm:px-10 bg-radial-hero overflow-x-clip">
       <div className="md:flex items-center">
         <div className="md:w-[478px]">
-          <div className="text-sm inline-flex border rounded-full px-3 py-1  border-[#222]/10 tracking-tight">
-            Meet Amethyst 2.0
-          </div>
-          <h1 className=" text-5xl md:text-7xl font-bold tracking-tighter pb-3 bg-gradient-to-b from-black to-[#3D2B63] text-transparent bg-clip-text mt-6">
+          <div className="tag">Meet Amethyst 2.0</div>
+          <h1 className=" text-5xl md:text-7xl heading">
             From Chaos <br />
             to Clarity
           </h1>
-          <p className="mt-4 text-xl text-[#180C26] tracking-tight md:w-[400]">
+          <p className="para md:w-[400]">
             It blocks every distraction, fades the noise, and drops you into a
             space of focus where only your work exists and what you bring back
             is your own.
@@ -25,7 +23,7 @@ const Hero = () => {
             <button className=" btn btn-primary">Get for free</button>
             <button className=" btn btn-text gap-1">
               <span>Learn more</span>
-              <ArrowRight className="h-5 w-5" />
+              <ArrowRight className="  h-5 w-5  mt-0.5" />
             </button>
           </div>
         </div>

@@ -9,43 +9,63 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-dm-sans);
-  
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  
 }
 
-@layer components{
+@layer components {
   .btn {
-    @apply  rounded-full px-5 py-3 font-medium inline-flex justify-center items-center tracking-tight
+    @apply rounded-full px-5 py-3 font-medium flex justify-center items-center tracking-tight;
   }
-  .btn-primary{
-      @apply bg-black  text-white
-
+  .btn-primary {
+    @apply bg-black  text-white;
   }
-  .btn-text{
-    @apply text-black bg-transparent
+  .btn-text {
+    @apply text-black bg-transparent;
   }
-  .logo-ticker-img{
-    @apply h-8 w-auto 
+  .logo-ticker-img {
+    @apply h-8 w-auto;
+  }
+  .tag {
+    @apply text-sm inline-flex border rounded-full px-3 py-1  border-[#222]/10 tracking-tight;
   }
   
+  .heading {
+    @apply  font-bold tracking-tighter pb-3 bg-gradient-to-b from-black to-[#3D2B63] text-transparent bg-clip-text mt-6;
+  }
+   .sub-heading {
+    @apply  font-bold tracking-tighter pb-3 bg-gradient-to-b from-black to-[#4F3A7A] text-transparent bg-clip-text mt-6;
+  }
+
+  .para{
+    @apply mt-4 text-xl text-[#180C26] tracking-tight
+  }
+  .light-grad{
+   @apply bg-gradient-to-b from-[#FFFFFF] to-[#DDD1F5]
+  }
+  
+
 }
 
 @layer utilities {
   .bg-radial-hero {
-    background-image: radial-gradient(ellipse 200% 100% at bottom left, #634994, #EAEEFE 86%);
+    background-image: radial-gradient(
+      ellipse 200% 100% at bottom left,
+      #634994,
+      #eaeefe 86%
+    );
   }
   .mask-fade-x {
     mask-image: linear-gradient(to right, transparent, black, transparent);
     mask-size: 100% 100%;
     mask-repeat: no-repeat;
   }
+  
+  
 }
-
 
 .aurora-banner {
   background: linear-gradient(
@@ -62,12 +82,12 @@ body {
 .aurora-text-animated {
   background: linear-gradient(
     135deg,
-    #FFB6C1 0%,
-    #DDA0DD 20%,
-    #ADD8E6 40%,
-    #FFE4C4 60%,
-    #E6E6FA 80%,
-    #F5F5DC 100%
+    #ffb6c1 0%,
+    #dda0dd 20%,
+    #add8e6 40%,
+    #ffe4c4 60%,
+    #e6e6fa 80%,
+    #f5f5dc 100%
   );
   background-size: 200% 200%;
   -webkit-background-clip: text;
@@ -78,6 +98,11 @@ body {
 }
 
 @keyframes aurora-shift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }

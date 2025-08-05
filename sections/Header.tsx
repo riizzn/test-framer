@@ -11,7 +11,7 @@ const Header = () => {
         <p className="text-white/60 hidden md:block">Clarity meets focus meets flow in one elegant workspace.</p>
         <div className="aurora-text-animated inline-flex gap-1 items-center">
           <p>Get started for free</p>
-          <ArrowRight className="h-4 w-4 inline-flex  justify-center items-center" />
+          <ArrowRight className="h-4 w-4 inline-flex  justify-center items-center  mt-0.5" />
         </div>
       </div>
       <div className="w-full px-4 py-2 ">
