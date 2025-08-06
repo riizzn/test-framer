@@ -6,7 +6,7 @@ import star2 from "@/assets/star2.png";
 import star3 from "@/assets/newstar.png";
 import { motion, useScroll, useTransform, useMotionValueEvent } from "motion/react";
 
-import Image from "next/image";
+
 import { useRef } from "react";
 const Hero = () => {
   const heroRef = useRef(null);

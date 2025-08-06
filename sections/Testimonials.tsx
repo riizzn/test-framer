@@ -22,10 +22,10 @@ const Testimonials = () => {
           essential tool for users around the world.
         </p>
       </div>
-      <div className="flex justify-center gap-6 ">
-        <TestCol testimonials={fc} />
-        <TestCol testimonials={sc} className="hidden md:flex"/>
-        <TestCol testimonials={tc} className="hidden lg:flex"/>
+      <div className="flex justify-center gap-6 mask-fade-y mt-10 max-h-[738px] overflow-hidden  ">
+        <TestCol testimonials={fc} duration={15} />
+        <TestCol testimonials={sc} duration={19} className="hidden md:block"/>
+        <TestCol testimonials={tc} duration={17} className="hidden lg:block"/>
    
    
       </div>
