@@ -1,4 +1,5 @@
 import Cta from "@/sections/Cta";
+import Footer from "@/sections/Footer";
 import Header from "@/sections/Header";
 import Hero from "@/sections/Hero";
 import LogoTicker from "@/sections/LogoTicker";
@@ -17,6 +18,7 @@ const Home = () => {
       <Pricing/>
       <Testimonials/>
       <Cta/>
+      <Footer/>
     </>
   );
 };

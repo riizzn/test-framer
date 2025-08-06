@@ -4,7 +4,7 @@ import glass2 from "@/assets/glass2.png";
 import Image from "next/image";
 const Cta = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 sm:px-10 py-24 bg-white light-grad overflow-x-clip">
+    <section className="max-w-7xl mx-auto px-6 sm:px-10 py-20 bg-white light-grad overflow-x-clip">
         <div className="max-w-[540px] mx-auto">
       <h3 className="text-4xl md:text-6xl  sub-heading text-center">
         Sign up for free today

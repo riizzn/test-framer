@@ -11,6 +11,11 @@ import avatar6 from "@/assets/avatar-6.png";
 import avatar7 from "@/assets/avatar-7.png";
 import avatar8 from "@/assets/avatar-8.png";
 import avatar9 from "@/assets/avatar-9.png";
+import x from "@/assets/social-x.svg";
+import insta from "@/assets/social-insta.svg";
+import linkedin from "@/assets/social-linkedin.svg";
+import pin from "@/assets/social-pin.svg";
+import youtube from "@/assets/social-youtube.svg";
 
 const navLinks = [
   {
@@ -178,5 +183,11 @@ const testimonials = [
     username: "@ethanbuilds",
   },
 ];
-
-export { navLinks, features, pricingTiers, testimonials };
+ const socialIcons = [
+  { name: "x", icon: x },
+  { name: "insta", icon: insta },
+  { name: "linkedin", icon: linkedin },
+  { name: "pin", icon: pin },
+  { name: "youtube", icon: youtube },
+];
+export { navLinks, features, pricingTiers, testimonials,socialIcons };
