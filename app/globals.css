@@ -37,7 +37,7 @@ body {
     @apply  font-bold tracking-tighter pb-3 bg-gradient-to-b from-black to-[#3D2B63] text-transparent bg-clip-text mt-6;
   }
    .sub-heading {
-    @apply  font-semibold tracking-tighter pb-3 bg-gradient-to-b from-black to-[#4F3A7A] text-transparent bg-clip-text ;
+    @apply  font-bold tracking-tighter pb-3 bg-gradient-to-b from-black to-[#4F3A7A] text-transparent bg-clip-text ;
   }
 
   .para{
@@ -45,6 +45,9 @@ body {
   }
   .light-grad{
    @apply bg-gradient-to-b from-[#FFFFFF] to-[#DDD1F5]
+  }
+  .lighter-grad{
+   @apply bg-gradient-to-b from-[#FFFFFF] to-[#E8DFFF]
   }
   .card{
     @apply p-10 rounded-3xl shadow-[0px_7px_14px_#ebe1ed] border border-[#ebe1ed] max-w-sm w-full

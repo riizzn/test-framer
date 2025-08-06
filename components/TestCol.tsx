@@ -1,13 +1,8 @@
 import { testimonials } from "@/constants";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import React from "react";
 import { twMerge } from "tailwind-merge";
-type TestCardProps = {
-  text: string;
-  imageSrc: StaticImageData;
-  name: string;
-  username: string;
-};
+
 
 const TestCol = (props: {
   className?: string;

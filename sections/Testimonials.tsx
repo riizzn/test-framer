@@ -1,6 +1,6 @@
 import TestCol from "@/components/TestCol";
 import { testimonials } from "@/constants";
-import Image from "next/image";
+
 
 const Testimonials = () => {
   const fc = testimonials.slice(0, 3);
