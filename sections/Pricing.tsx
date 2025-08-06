@@ -3,8 +3,9 @@ import Check from "@/assets/check.svg";
 import { twMerge } from "tailwind-merge";
 
 const Pricing = () => {
+
   return (
-    <section className="max-w-7xl mx-auto px-6 sm:px-10 py-24">
+    <section className="max-w-7xl mx-auto px-6 sm:px-10 py-24 bg-white">
       <div className="max-w-[540px] mx-auto">
         <h2 className="text-4xl md:text-6xl  sub-heading text-center">
           Pricing
@@ -22,7 +23,7 @@ const Pricing = () => {
           ) => (
             <div
               className={twMerge(
-                "p-10 rounded-3xl shadow-[0px_7px_14px_#ebe1ed] border border-[#ebe1ed] max-w-sm w-full",
+                "card",
                 inverse &&
                   "border-black text-white bg-black shadow-[0px_7px_14px_#ebe1ed]"
               )}

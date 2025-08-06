@@ -46,6 +46,9 @@ body {
   .light-grad{
    @apply bg-gradient-to-b from-[#FFFFFF] to-[#DDD1F5]
   }
+  .card{
+    @apply p-10 rounded-3xl shadow-[0px_7px_14px_#ebe1ed] border border-[#ebe1ed] max-w-sm w-full
+  }
   
 
 }
@@ -60,6 +63,11 @@ body {
   }
   .mask-fade-x {
     mask-image: linear-gradient(to right, transparent, black, transparent);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+  }
+   .mask-fade-y {
+     mask-image: linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%);
     mask-size: 100% 100%;
     mask-repeat: no-repeat;
   }
