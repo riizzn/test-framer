@@ -45,7 +45,7 @@ const Cta = () => {
           src={glass2.src}
           alt="glass"
           width={360}
-          className="absolute md:block md:absolute -top-90 -right-50"
+          className="hidden md:block md:absolute -top-90 -right-50"
           style={{ translateY: translateY }}
         />
       </div>
