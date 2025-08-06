@@ -9,14 +9,14 @@ import Youtube from "@/assets/social-youtube.svg";
 
 const Footer = () => {
   return (
-    <footer className="max-w-7xl mx-auto px-6 sm:px-10 py-10 bg-black text-white ">
+    <footer className="max-w-7xl mx-auto text-sm px-6 sm:px-10 py-10 bg-black text-[#BCBCBC] ">
       <div className="flex justify-center">
         <Image
           src={logo}
           alt="logo"
           height={60}
           width={60}
-          className="invert"
+          className="invert "
         />
       </div>
 

@@ -1,6 +1,7 @@
+"use client";
 import TestCol from "@/components/TestCol";
 import { testimonials } from "@/constants";
-
+import { motion } from "motion/react";
 
 const Testimonials = () => {
   const fc = testimonials.slice(0, 3);

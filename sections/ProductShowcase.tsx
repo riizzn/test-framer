@@ -1,13 +1,26 @@
+"use client";
 import productImage from "@/assets/product-image.png";
 import s1 from "@/assets/s1.png";
 import s2 from "@/assets/s2.png";
 import FeatureCard from "@/components/FeatureCard";
 import { features } from "@/constants";
-
+import { motion, useScroll, useTransform } from "motion/react";
+import { useRef } from "react";
 import Image from "next/image";
+
 const ProductShowcase = () => {
+  const prodRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: prodRef,
+    offset: ["start end", "end start"],
+  });
+  const translateY = useTransform(scrollYProgress, [0, 1], [-150, 150]);
+
   return (
-    <section className="max-w-7xl mx-auto px-6 sm:px-10 py-24 light-grad overflow-x-clip">
+    <section
+      ref={prodRef}
+      className="max-w-7xl mx-auto px-6 sm:px-10 py-24 light-grad overflow-x-clip"
+    >
       <div className="max-w-[540px] mx-auto">
         <div className="flex justify-center">
           <div className="tag">Distraction-Free Flow</div>
@@ -21,16 +34,26 @@ const ProductShowcase = () => {
         </p>
       </div>
       <div className="relative">
-      <Image src={productImage} alt="Product Image" className="mt-10"  />
-      <Image src={s1} alt="star" width={300} className="hidden md:block md:absolute -left-30 bottom-10 "/>
-      <Image src={s2} alt="star" width={300} className="hidden md:block md:absolute -right-36 bottom-75"/>
+        <Image src={productImage} alt="Product Image" className="mt-10" />
+        <motion.img
+          src={s1.src}
+          alt="star"
+          width={300}
+          className="hidden md:block md:absolute -left-30 bottom-10 "
+          style={{ translateY: translateY }}
+        />
+        <motion.img
+          src={s2.src}
+          alt="star"
+          width={300}
+          className="hidden md:block md:absolute -right-36 bottom-75"
+          style={{ translateY: translateY }}
+        />
       </div>
       <div className=" grid grid-cols-1  mt-15 gap-20  place-items-center md:grid-cols-2 md:px-10 lg:flex  ">
-        {features.map((feature,index)=>(
-          <FeatureCard key={index} {...feature}/>
+        {features.map((feature, index) => (
+          <FeatureCard key={index} {...feature} />
         ))}
-
-
       </div>
     </section>
   );
