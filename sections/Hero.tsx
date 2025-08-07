@@ -8,6 +8,7 @@ import { motion, useScroll, useTransform, useMotionValueEvent } from "motion/rea
 
 
 import { useRef } from "react";
+import Image from "next/image";
 const Hero = () => {
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -38,7 +39,7 @@ const Hero = () => {
             <button className=" btn btn-primary">Get for free</button>
             <button className=" btn btn-text gap-1">
               <span>Learn more</span>
-              <ArrowRight className="  h-5 w-5  mt-0.5" />
+              <ArrowRight className="h-5 w-5 mt-0.5" />
             </button>
           </div>
         </div>
